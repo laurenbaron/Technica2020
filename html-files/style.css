@@ -1,0 +1,79 @@
+body {
+    background-color: #CD5C5C;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-top: 5%;
+}
+
+.loginDiv {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.contain {
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50%;
+}
+
+.center {
+    margin: auto;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.5;
+}
+
+.form-control:focus {
+    outline: none !important;
+    border: 1px solid #CD5C5C;
+    box-shadow: 0 0 5px #CD5C5C;
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    color: #CD5C5C;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+}
+
+.btn-outline {
+    opacity: 0.5;
+    border: 1px solid;
+}
+
+.btn-hover:hover {
+    background-color: #CD5C5C;
+    color: white;
+    opacity: 1;
+    border: 1px solid #CD5C5C;
+    ;
+}
+
+.footer-text {
+    color: white;
+}

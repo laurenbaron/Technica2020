@@ -1,0 +1,88 @@
+<!--use nav bar in the base html -->
+{% extends "base.html" %}
+{% block content %}
+
+<img src="{{ url_for('static', filename='images/small_business.jpg') }}" alt="..." class="img-fluid img-responsive">
+
+<div class="container marketing text-dark">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+   <!--   <img src="{{ url_for('static', filename='images/hen-2-S.jpg') }}" alt="..." class="rounded-circle"> -->
+   <h1 style="font-family: Arial, 'Font Awesome 5 Free'">&#xf879;</h1>
+
+
+      <h3 style="font-family: Arial, 'Font Awesome 5 Free'">Contact Us</h3>
+      <p class="m-0 p-0">Email us at xxx@gmail.com</p>
+      <p  class="m-0 p-0" style="font-family: Arial, 'Font Awesome 5 Free'">Connect at Facebook</p>
+      <p  class="m-0 p-0"style="font-family: Arial, 'Font Awesome 5 Free'">Connect at linkedin</p>
+
+
+      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+     <!-- <img src="{{ url_for('static', filename='images/hen-3-S.jpg') }}" alt="..." class="rounded-circle img-fluid"> -->
+
+    <h1 style="font-family: Arial, 'Font Awesome 5 Free'">&#xf02d;</h1>
+
+      <h3>Tutorial</h3>
+      <p>Clink the link below to see all the features of our tool. </p>
+      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+     <!--<img src="{{ url_for('static', filename='images/hen-2-S.jpg') }}" alt="..." class="rounded-circle img-fluid"> -->
+     <h1 style="font-family: Arial, 'Font Awesome 5 Free'">&#xf128;</h1>
+      <h3>FAQs</h3>
+      <p>Having Trouble?  Click here for commonly asked questions</p>
+      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Benefits of Supporting Small Businesses <span class="text-muted"></span></h2>
+      <p class="lead"> Small businesses are crucial to our community. They create more jobs, generate more local wealth for the local economy,
+        and make up 99% of all US businesses.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img src="{{ url_for('static', filename='images/diagram.png') }}" alt="..." class="img-fluid">
+    </div>
+  </div>
+ <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading"> COVID-19 precautions<span class="text-muted"></span></h2>
+      <p class="lead"> Amidst the pandemic, we are thrilled that restaurants have begun to open back up. However, we want
+        to make sure you feel safe as a customer dining out. Make sure to check with the restaurant about their health and safety guidelines before eating there.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img src="{{ url_for('static', filename='images/open.jpg') }}" alt="..." class="img-fluid">
+    </div>
+  </div>
+ <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Help Us Support Small Businesses<span class="text-muted"></span></h2>
+      <p class="lead"> Use our restaurant generator to find a new place to eat that you have never been to before! It's a
+        fun way to get to know what's available in your community!
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img src="{{ url_for('static', filename='images/smallbus.jpg') }}" alt="..." class="img-fluid">
+    </div>
+  </div>
+ <hr class="featurette-divider">
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+
+{% endblock %}
