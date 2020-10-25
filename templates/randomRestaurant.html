@@ -2,24 +2,20 @@
 {% extends "base.html" %}
 {% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Let us pick where you eat next!</title>
-    <script defer
-     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNHPpZbN7pPX9vJLbzrx7Sr8PFFZPhAFg&callback=initMap">
-     </script>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNHPpZbN7pPX9vJLbzrx7Sr8PFFZPhAFg&callback=initMap"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
 
-</head>
-<body>
-<div class="container-fluid">
-    <div class="row my-2">
-        <div id="map">
-
-        <div class="container-fluid">
-            <p>Enter your location:</p>
-        </div>
-    </div>
-        </div>
-</div>
-</body>
 {% endblock %}
