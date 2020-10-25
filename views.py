@@ -10,9 +10,13 @@ app.secret_key = "spininmanurematch"
 def home():
     return render_template("home.html")
 
-@app.route("/randomRestaurant", methods=["POST", "GET"])
+@app.route("/randomRestaurant.html", methods=["POST", "GET"])
 def randomRestaurant():
-    return render_template("randomRestaurant.html")
+    if request.method == "POST":
+        if request.form["submit"] == "submit":
+            return render_template("randomRestaurant.html", display=True)
+    else:
+        return render_template("randomRestaurant.html", display=False)
 
 if __name__ == "__main__":
     app.run(debug=True)

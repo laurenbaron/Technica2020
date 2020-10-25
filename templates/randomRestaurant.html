@@ -7,15 +7,15 @@
             <br>
     <br>
     <br>
-    <form>
+    <form action="randomRestaurant.html" novalidate="" method = "POST">
         <p class="h6">Enter your location to get our recommendation on where to eat out around you!</p>
       <div class="form-group">
              <input type="city" class="form-control" id="city" aria-describedby="city" placeholder="City, State">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" name="submit" value="submit" method = "POST">Submit</button>
          </div>
-    </form>
-
+</form>
 <br>
+    {% if display==True %}
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
          <h1 class="display-4">Our Pick For You</h1>
@@ -27,5 +27,7 @@
         <a class="btn btn-primary btn-lg" href="https://www.caffegelato.net/" role="button">Visit their website</a>
         </div>
     </div>
+
 </div>
+{% endif %}
 {% endblock %}
