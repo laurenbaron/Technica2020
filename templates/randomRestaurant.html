@@ -2,16 +2,30 @@
 {% extends "base.html" %}
 {% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Let us pick where you eat next!</title>
-</head>
-<body>
 <div class="container-fluid">
-    <div class="row my-2">
-        <div class="container-fluid">
-            <p>Enter your location:</p>
+            <br>
+            <br>
+    <br>
+    <br>
+    <form>
+        <p class="h6">Enter your location to get our recommendation on where to eat out around you!</p>
+      <div class="form-group">
+             <input type="city" class="form-control" id="city" aria-describedby="city" placeholder="City, State">
+      <button type="submit" class="btn btn-primary">Submit</button>
+         </div>
+    </form>
+
+<br>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+         <h1 class="display-4">Our Pick For You</h1>
+            <hr class="my-4">
+            <img src="{{ url_for('static', filename='images/caffe.jpg') }}" alt="..." class="img-fluid", width="1000", height="1000">
+        <h2 class="display-4">Caffe Gelato</h2>
+
+        <p>Open for Lunch, Dinner, or Drinks, this small business is family-owned at the heart of the University of Delaware!</p>
+        <a class="btn btn-primary btn-lg" href="https://www.caffegelato.net/" role="button">Visit their website</a>
         </div>
     </div>
-</body>
+</div>
 {% endblock %}
